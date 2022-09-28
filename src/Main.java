@@ -1,6 +1,7 @@
 import workers.Employee;
 import workers.FieldLengthLimitException;
 import workers.Manager;
+
 import java.util.Scanner;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String s, name, surname;
         double sell, man_bonus;
-        int vvod=1;
+        int vvod = 1;
 
         System.out.println("Enter name of the employee");
         name = scanner.next();
@@ -20,11 +21,11 @@ public class Main {
         sell = Double.parseDouble(s);
 
         Employee emp1 = null;
-        emp1 =  new Employee(name,surname,sell);
+        emp1 = new Employee(name, surname, sell);
         emp1.PrintEmployee();
 
         hr.addWorkers(emp1);
-        System.out.println("hr1 code = "+hr.hashCode());
+        System.out.println("hr1 code = " + hr.hashCode());
         hr.toStringList();
         HR_List hr2 = HR_List.getInstance();
 
@@ -40,18 +41,18 @@ public class Main {
         man_bonus = Double.parseDouble(s);
 
         Manager emp2 = null;
-        emp2 = new Manager(name,surname,sell,man_bonus);
+        emp2 = new Manager(name, surname, sell, man_bonus);
         emp2.PrintEmployee();
         //id,name,surname,sell
         hr2.addWorkers(emp2);
-        System.out.println("hr1 code = "+hr2.hashCode());
+        System.out.println("hr1 code = " + hr2.hashCode());
         hr2.toStringList();
         HR_List hr3 = HR_List.getInstance();
         System.out.println("emp1 = " + emp1.hashCode());
         System.out.println("emp2 = " + emp2.hashCode());
 
         System.out.println("Adding 3rd workers, and check it");
-        Employee emp3 = new Employee( "Deck", "Green", 1300);
+        Employee emp3 = new Employee("Deck", "Green", 1300);
         emp3.PrintEmployee();
 
         System.out.println("If you are in this list enter 0");
@@ -60,11 +61,11 @@ public class Main {
         vvod = Integer.parseInt(s);
 
         try {
-            hr3.CheckWorker(emp3,vvod);
+            hr3.CheckWorker(emp3, vvod);
             System.out.println("Adding you");
             hr3.addWorkers(emp3);
             hr3.toStringList();
-        }catch(EmployeeRegistryException ex){
+        } catch (EmployeeRegistryException ex) {
             System.out.println(ex.getMessage());
         }
         hr3.toStringList();
