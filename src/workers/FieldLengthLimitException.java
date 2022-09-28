@@ -1,6 +1,7 @@
 package workers;
 
 public class FieldLengthLimitException extends Throwable {
-    public FieldLengthLimitException(String s) {
+    public FieldLengthLimitException(String msg) {
+        super(msg);
     }
 }
