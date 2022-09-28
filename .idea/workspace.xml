@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba77ef5f-6888-47b5-8af6-ee3366bdc195" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/IncorrectSalaryException.java" afterDir="false" />
+    <list default="true" id="ba77ef5f-6888-47b5-8af6-ee3366bdc195" name="Changes" comment="final prod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FieldLengthLimitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FieldLengthLimitException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,9 +49,15 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/3й курс/j2ee/codes/lab1&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="workers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -78,6 +82,9 @@
       <updated>1663163596140</updated>
       <workItem from="1663163605670" duration="9007000" />
       <workItem from="1663229643514" duration="3517000" />
+      <workItem from="1663836181911" duration="2087000" />
+      <workItem from="1664045404438" duration="7960000" />
+      <workItem from="1664371922422" duration="5835000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1663254060425</created>
@@ -93,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663254129383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="final prod">
+      <created>1663264533301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663264533301</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="final prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="final prod" />
   </component>
 </project>
