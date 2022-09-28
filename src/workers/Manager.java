@@ -5,6 +5,7 @@ public class Manager extends Employee {
 
     public Manager(String name_vvod, String surname_vvod, double sallary, double input_bonus) throws FieldLengthLimitException {
         super(name_vvod, surname_vvod, sallary);
+
         this.id = nextid++;
         if (name_vvod.length() > 12) {
             throw new FieldLengthLimitException("Name mast be less them 12 symbols");
@@ -13,27 +14,14 @@ public class Manager extends Employee {
         this.name = name_vvod;
         this.salary = sallary;
         this.bonus = input_bonus;
-     /*
-
-        }else{
-            this.name = name_vvod;
-        }
-        if(sallary<0){
-
-        }else{
-            this.salary = sallary;
-        }
-        nextid++;*/
-
-
     }
 
-    void PrintEmployee() {
+    public void PrintEmployee() {
         System.out.println("Id of Employee is " +
-                +id + "Name and Surname is " + name +
+                +id + " Name and Surname is " + name +
                 " The surname is " + surname +
                 " The salary is " + salary
-                + "The bonus is " + bonus
+                + " The bonus is " + bonus
         );
     }
 }
