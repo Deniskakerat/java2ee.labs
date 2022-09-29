@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba77ef5f-6888-47b5-8af6-ee3366bdc195" name="Changes" comment="lab2 adding package">
-      <change afterPath="$PROJECT_DIR$/src/EmployeeRegistryException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HR_List.java" afterDir="false" />
+    <list default="true" id="ba77ef5f-6888-47b5-8af6-ee3366bdc195" name="Changes" comment="lab2 upgrade the checking logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EmployeeRegistryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EmployeeRegistryException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HR_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HR_List.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/workers/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workers/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/workers/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/workers/Manager.java" afterDir="false" />
@@ -48,14 +48,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/3й курс/j2ee/codes/lab1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Desktop/3й курс/j2ee/codes/lab1"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="workers" />
@@ -87,7 +87,9 @@
       <workItem from="1663229643514" duration="3517000" />
       <workItem from="1663836181911" duration="2087000" />
       <workItem from="1664045404438" duration="7960000" />
-      <workItem from="1664371922422" duration="16450000" />
+      <workItem from="1664371922422" duration="16735000" />
+      <workItem from="1664437318492" duration="1798000" />
+      <workItem from="1664457682147" duration="11049000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1663254060425</created>
@@ -124,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664382294527</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab2 adding package">
+      <created>1664400060369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664400060369</updated>
+    </task>
+    <task id="LOCAL-00007" summary="lab2 adding package">
+      <created>1664400101426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664400101426</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +161,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="final prod" />
     <MESSAGE value="lab2 adding package" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab2 adding package" />
+    <MESSAGE value="lab2 upgrade the checking logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab2 upgrade the checking logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

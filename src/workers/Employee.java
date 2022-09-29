@@ -22,9 +22,22 @@ public class Employee {
 
     public void PrintEmployee() {
         System.out.println("Id of Employee is " +
-                +id + " Name and Surname is " + name +
+                id + " Name and Surname is " + name +
                 " The surname is " + surname +
                 " The salary is " + salary
         );
+    }
+    public int CheckEmployee(String check_name,String check_surname) {
+        if(this.name.equals(check_name) && this.surname.equals(check_surname)){
+            return 0;
+        }else{
+            return 1;
+        }
+    }
+    public String GetStringName() {
+        return this.name;
+    }
+    public String GetStringSurName() {
+        return this.surname;
     }
 }

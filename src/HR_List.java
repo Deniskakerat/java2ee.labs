@@ -17,21 +17,22 @@ public class HR_List {
         return instance;
     }
 
-    public void addWorkers(Employee emp) {
-        workers.add(emp);
-    }
-
-    public void CheckWorker(Employee emp, int s) throws EmployeeRegistryException {
-        for (int i = 0; i < workers.size(); i++) {
-            emp.PrintEmployee();
-            if (s == 0) {
-                throw new EmployeeRegistryException("You are already logged in");
-            } else {
-                s = 1;
+    public void addWorkers(Employee emp1) throws EmployeeRegistryException{
+        if(workers.isEmpty()){
+            workers.add(emp1);
+        }else {
+            String check_name = emp1.GetStringName();
+            String check_surname = emp1.GetStringSurName();
+            for (Employee emp : workers) {
+                int s = emp.CheckEmployee(check_name, check_surname);
+                if (s == 0) {
+                    throw new EmployeeRegistryException("You are already logged in");
+                } else {
+                    workers.add(emp1);
+                }
             }
         }
     }
-
     public void toStringList() {
         for (Employee emp : workers) {
             emp.PrintEmployee();

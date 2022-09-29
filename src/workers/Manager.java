@@ -18,10 +18,13 @@ public class Manager extends Employee {
 
     public void PrintEmployee() {
         System.out.println("Id of Employee is " +
-                +id + " Name and Surname is " + name +
+                id + " Name and Surname is " + name +
                 " The surname is " + surname +
                 " The salary is " + salary
                 + " The bonus is " + bonus
         );
+
     }
-}
+
+    }
+
