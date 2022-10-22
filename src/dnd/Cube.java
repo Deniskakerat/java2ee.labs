@@ -1,6 +1,5 @@
-package memento;
+package dnd;
 
-import java.util.Random;
 public class Cube {
     protected int[] result_args = new int[3];
     protected int result;
@@ -10,12 +9,12 @@ public class Cube {
         int s = 0;
         int[] arg = new int[6];
         for (int i = 0; i < arg.length; i++) {
-            s = (int) (Math.random() * (6) + 1);
+
             arg[i] = s;
             //System.out.println(arg[i]);
         }
         int max = 6;
-
+        s = (int) (Math.random() * (6) + 1);
         int numberOperation = 0;
         while (numberOperation < 3) {
             for (int i = 0; i < arg.length; i++) {

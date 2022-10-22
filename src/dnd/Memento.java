@@ -1,4 +1,4 @@
-package memento;
+package dnd;
 
 public class Memento {
     private Stats state;
@@ -8,7 +8,7 @@ public class Memento {
     protected int intellect;
     protected int wisdom;
     protected int charisma;
-    Memento(Stats state){
+  /*  Memento(Stats state){
         this.state = state;
         this.strength = state.getStrength();
         this.dexterity = state.getDexterity();
@@ -16,13 +16,13 @@ public class Memento {
         this.intellect = state.getIntellect();
         this.wisdom = state.getWisdom();
         this.charisma = state.getCharisma();
-    }
+    }*/
     Memento(){}
 
-    public Memento saveStateToMomento(){
+   /* public Memento saveStateToMomento(){
         System.out.println("State ready to save");
         return new Memento(state);
-    }
+    }*/
     public void getStateFromMomento(Memento memento){
         this.state = state;
     }
@@ -33,7 +33,7 @@ public class Memento {
     public Stats getState(Stats state){
         return this.state;
     }
-    public void setState(Stats state){
+   /* public void setState(Stats state){
         this.state = state;
         this.strength = state.getStrength();
         this.dexterity = state.getDexterity();
@@ -41,6 +41,6 @@ public class Memento {
         this.intellect = state.getIntellect();
         this.wisdom = state.getWisdom();
         this.charisma = state.getCharisma();
-    }
+    }*/
 
 }
