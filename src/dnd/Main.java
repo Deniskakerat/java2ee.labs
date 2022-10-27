@@ -1,15 +1,21 @@
 package dnd;
-import dnd.dndRace.Bard.BardFactory;
+import dnd.dndRace.Hobgoblin.HobgoblinFactory;
+import dnd.dndRace.RaceAbstractFactory;
 import dnd.dndRace.RaceFactory;
-import dnd.dndRace.Ranger.RangerFactory;
-import dnd.dndclass.Classes.Bard;
 import dnd.dndclass.Factory.ClassFactory;
 
 public class Main {
     public static void main(String[] args) {
-
         Character player = new Character("Durin", ClassFactory.getClass("Bard"),
-        RaceFactory.getRace(new BardFactory(), "Brave Bard"));
+                RaceFactory.getRace(new HobgoblinFactory()));
+        player.setAtributes(Stats.generate());
+        player.addRaceBonuses();
+        player.printSheet();
+        player.battleCry();
+
+
+       /* Character player = new Character("Durin", ClassFactory.getClass("Bard"),
+        RaceFactory.getRace(new dnd.dndRace.Hobgoblin.HobgoblinFactory(), "Brave Bard"));
         player.setAtributes(Stats.generate());
         player.addRaceBonuses();
         player.printSheet();
@@ -20,6 +26,6 @@ public class Main {
         player2.setAtributes(Stats.generate());
         player2.addRaceBonuses();
         player2.printSheet();
-        player2.battleCry();
+        player2.battleCry();*/
     }
 }

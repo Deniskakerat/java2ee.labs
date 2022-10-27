@@ -3,7 +3,7 @@ package dnd.dndRace.Ranger;
 import dnd.Stats;
 import dnd.dndRace.RaceAbstractFactory;
 import java.util.HashMap;
-
+/*
 public class RangerFactory implements RaceAbstractFactory {
     HashMap<String, Stats> rangerType = new HashMap<>();
 
@@ -14,4 +14,4 @@ public class RangerFactory implements RaceAbstractFactory {
         }
         return new Ranger(type,rangerType.get(type));
     }
-}
+}*/

@@ -3,5 +3,5 @@ package dnd.dndRace;
 import dnd.dndRace.CharacterRace;
 
 public interface RaceAbstractFactory {
-    public CharacterRace create(String type);
+    public CharacterRace create();
 }

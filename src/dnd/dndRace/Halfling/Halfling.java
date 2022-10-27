@@ -1,11 +1,11 @@
-package dnd.dndRace.Bard;
+package dnd.dndRace.Halfling;
 
 import dnd.Stats;
 import dnd.dndRace.CharacterRace;
 
-public class Bard extends CharacterRace {
+public class Halfling extends CharacterRace {
 
-    Bard(String name, Stats state){
+    Halfling(String name, Stats state){
         this.name = name;
         this.bonuses = state;
     }
