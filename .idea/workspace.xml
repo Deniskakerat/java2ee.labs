@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db959980-1dfa-40af-8ea5-42b863359a54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Classes/Bard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Classes/CharacterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Classes/Halflingy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Classes/Hobgoblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Classes/Ranger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDClass/Factory/ClassFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/CharacterRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Halfling/Halfling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Halfling/HalflingFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Hobgoblin/Hobgoblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Hobgoblin/HobgoblinFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/RaceAbstractFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/RaceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Ranger/Ranger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/DnDRace/Ranger/RangerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharacterCreator/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataVisitor/DataElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataVisitor/DataElementsVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataVisitor/ElementVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/json-simple-1.1.1.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GxP2s89tBAnaddVqTH6EucAzM7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Desktop/3й курс/j2ee/codes/lab7/src/CharacterCreator/DnDRace",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\3й курс\j2ee\codes\lab7\src\CharacterCreator\DnDRace" />
+      <recent name="D:\Desktop\3й курс\j2ee\codes\lab7\src\CharacterCreator\DnDClass" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\3й курс\j2ee\codes\lab7\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db959980-1dfa-40af-8ea5-42b863359a54" name="Changes" comment="" />
+      <created>1667327063265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667327063265</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
