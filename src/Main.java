@@ -10,6 +10,7 @@ public class Main {
         th1.start();
         //потім дикремент
         th2.start();
+
     }
 }
 /*
