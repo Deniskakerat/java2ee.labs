@@ -6,7 +6,10 @@ public class Thread1 extends Thread {
     }
 
     @Override
-    public void run() {
-        bank.inc();
+    public synchronized void run() {
+        for (int i = 1; i <= 200000; i++) {
+            bank.setAccount(bank.getAccount() +2);
+        }
+        System.out.println("1Potok increment: " + bank.getAccount());
     }
 }
