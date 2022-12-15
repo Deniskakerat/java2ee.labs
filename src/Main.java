@@ -1,20 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        final Bank bank = new Bank();
-        //Синхронизація через передачу класу у конструктор класів аби визивати метод в об'єктах
-        //перший поток
-        Thread1 th1 = new Thread1(bank);
-        //спочатку виконуємо інкремент
-        th1.start();
-        //другий поток з одним і тим самим об'єктом
-        Thread2 th2 = new Thread2(bank);
-        //потім дикремент
-        th2.start();
-
+        ChatServer chatServer = new ChatServer();
+        Thread tChatServer = new Thread(chatServer);
+        tChatServer.start();
     }
 }
-/*
-в Результаті зміни методів run та встановлення логіки схожаю на inc та dec методів bank
-після запуску програми ми отримали результат що початку запустився 2 поток потім перший що не є логічним отже
-додаємо блок synchronized
- */
