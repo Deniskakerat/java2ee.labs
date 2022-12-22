@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ua.edu.sumdu;
 
-/**
- *
- * @author Andrii
- */
 public class Student {
     private String firstName;
     private String lastName;
@@ -19,19 +11,19 @@ public class Student {
     public Student(String firstName, String lastName,
     String age, String email, String group, String faculty) throws IllegalArgumentException {
         if (firstName.isBlank()) {
-            throw new IllegalArgumentException("1st name field must be filled!");
+            throw new IllegalArgumentException("1st name is empty");
         }
         if (lastName.isBlank()) {
-            throw new IllegalArgumentException("Last name field must be filled!");
+            throw new IllegalArgumentException("Last name is empty");
         }
         if (age.isBlank()) {
-            throw new IllegalArgumentException("Age field must be filled!");
+            throw new IllegalArgumentException("Age is empty");
         }
         if (group.isBlank()) {
-            throw new IllegalArgumentException("Group field must be filled!");
+            throw new IllegalArgumentException("Group is empty");
         }
         if (faculty.isBlank()) {
-            throw new IllegalArgumentException("Faculty field must be filled!");
+            throw new IllegalArgumentException("Faculty is empty");
         }
         
         this.firstName = firstName;
@@ -48,7 +40,7 @@ public class Student {
     
     public void setFirstName(String firstName) throws IllegalArgumentException {
         if (firstName.isBlank()) {
-            throw new IllegalArgumentException("1st name field must be filled!");
+            throw new IllegalArgumentException("1st name is empty");
         }
         
         this.firstName = firstName;
@@ -60,7 +52,7 @@ public class Student {
     
     public void setLastName(String lastName) throws IllegalArgumentException {
         if (lastName.isBlank()) {
-            throw new IllegalArgumentException("Last name field must be filled!");
+            throw new IllegalArgumentException("Last name is empty");
         }
         
         this.lastName = lastName;
@@ -72,7 +64,7 @@ public class Student {
     
     public void setAge(String age) throws IllegalArgumentException {
         if (age.isBlank()) {
-            throw new IllegalArgumentException("Age field must be filled!");
+            throw new IllegalArgumentException("Age is empty");
         }
         
         this.age = age;
@@ -92,7 +84,7 @@ public class Student {
     
     public void setGroup(String group) throws IllegalArgumentException {
         if (group.isBlank()) {
-            throw new IllegalArgumentException("Group field must be filled!");
+            throw new IllegalArgumentException("Group is empty");
         }
         
         this.group = group;
@@ -104,7 +96,7 @@ public class Student {
     
     public void setFaculty(String faculty) throws IllegalArgumentException {
         if (faculty.isBlank()) {
-            throw new IllegalArgumentException("Faculty field must be filled!");
+            throw new IllegalArgumentException("Faculty is empty");
         }
         
         this.faculty = faculty;
