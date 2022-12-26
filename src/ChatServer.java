@@ -1,56 +1,55 @@
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class ChatServer implements Runnable {
-    private Map<Integer, Socket> mapClient = new TreeMap<Integer, Socket>();
+    private final Map<Integer, Socket> mapClient = new HashMap();
 
-    @Override
+    public ChatServer() {
+    }
+
     public void run() {
-        ServerSocket server = null;
         try {
-            server = new ServerSocket(8888);
+            ServerSocket serverSocket = new ServerSocket(8887);
+            System.out.println("Waiting for new client...");
+            int numClient = 1;
 
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("Server is on");
-        int numberClient = 1;
-        Socket client = null;
-        while (true) {
-            try {
-                client = server.accept();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            while(true) {
+                Socket client = serverSocket.accept();
+                Thread clientThread = new Thread(new ClientThread(client, this, numClient));
+                clientThread.setDaemon(true);
+                clientThread.start();
+                this.mapClient.put(numClient, client);
+                ++numClient;
             }
-            Thread clientThread = new Thread(new ClientThread(client, this, numberClient));
-            clientThread.setDaemon(true);
-            clientThread.start();
-            mapClient.put(numberClient, client);
-            numberClient++;
+        } catch (IOException var5) {
+            System.out.println(var5.getMessage());
         }
     }
 
-    public void sendMessageForAllClient(int numberClient, String clientMessage) {
-        for (int i = 1; i < mapClient.size(); i++) {
-            if (numberClient != i) {
-                System.out.println("Sending message to Client " + numberClient + "\n");
-                BufferedWriter outputUser = null;
+    public void clientExitedChat(int n) {
+        this.mapClient.remove(n);
+    }
+
+    public void sendMessageForAllClient(int numClient, String clientMessage) {
+        Iterator var3 = this.mapClient.keySet().iterator();
+
+        while(var3.hasNext()) {
+            int i = (Integer)var3.next();
+            if (numClient != i) {
+                System.out.println("Sending message to client " + i + "...");
+
                 try {
-                    outputUser = new BufferedWriter(new OutputStreamWriter(mapClient.get(i).getOutputStream()));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-                try {
-                    outputUser.write("Clirnt" + numberClient + ": " + clientMessage + "\n Input message");
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    (new PrintWriter(((Socket)this.mapClient.get(i)).getOutputStream(), true)).println("Client " + numClient + ": " + clientMessage);
+                } catch (IOException var6) {
+                    System.out.println(var6.getMessage());
                 }
             }
         }
+
     }
 }

@@ -12,12 +12,13 @@ public class ReceiveMessageFromServer implements Runnable {
 
     public void run() {
         BufferedReader in = new BufferedReader(new InputStreamReader(inputStreamServer));
-        String serverMessage;
-        while (true) {
+        String serverMessage = null;
+
+        while (!"exit".equalsIgnoreCase(serverMessage)) {
             try {
                 serverMessage = in.readLine();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
             if (serverMessage != null) {
                 System.out.print("\n" + serverMessage + "\nEnter the message: ");

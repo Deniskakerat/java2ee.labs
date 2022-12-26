@@ -5,46 +5,39 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public class ClientThread implements Runnable {
+    private final Socket clientSocket;
+    private final ChatServer chatServer;
+    private final int numClient;
 
-    Socket clientSocket;
-    ChatServer chatServer;
-    int numberClient; // xouep xiuexma
-
-    public ClientThread(Socket clientSocket, ChatServer chatServer, int number) {
+    public ClientThread(Socket clientSocket, ChatServer chatServer, int numClient) {
         this.clientSocket = clientSocket;
         this.chatServer = chatServer;
-        numberClient = number;
+        this.numClient = numClient;
     }
 
-    @Override
     public void run() {
-        BufferedReader in = null;
         try {
-            in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("Client №" + numberClient + " is on");
+            BufferedReader in = new BufferedReader(new InputStreamReader(this.clientSocket.getInputStream()));
+            System.out.println("Client " + this.numClient + " has been connected.");
+            (new PrintWriter(this.clientSocket.getOutputStream(), true)).println("Client " + this.numClient);
 
-        try {
-            new PrintWriter(clientSocket.getOutputStream(), true).println("Client №" + numberClient + ".");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        String clientMessage = null;
-        while (true) {
-            try {
-                clientMessage = in.readLine();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            while(true) {
+                String clientMessage = in.readLine();
+                if ("exit".equalsIgnoreCase(clientMessage)) {
+                    System.out.println("Client " + this.numClient + " has been disconnected.");
+                    this.chatServer.clientExitedChat(this.numClient);
+                    in.close();
+                    this.clientSocket.close();
+                    break;
+                }
+
+                System.out.println("Client " + this.numClient + " has sent message: " + clientMessage);
+                this.chatServer.sendMessageForAllClient(this.numClient, clientMessage);
             }
-            if (!"exit".equals(clientMessage)) {
-                System.out.println("Client №" + numberClient + ": " + clientMessage);
-                chatServer.sendMessageForAllClient(numberClient, clientMessage);
-            } else {
-                break;
-            }
+        } catch (IOException var3) {
+            System.out.println(var3.getMessage());
         }
+
     }
 }
 
